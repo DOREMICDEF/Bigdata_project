@@ -37,7 +37,16 @@ def upload_page():
 
     st.title("🎮 PLAY FOR ALL")
 
-    st.subheader("게임 기록 분석")
+    st.subheader("게임이 어려워도 괜찮아요. 내 속도로 함께해요.")
+
+    st.info(
+        "게임이 익숙하지 않거나 어렵게 느껴지는 분들도 차근차근 즐길 수 있어요. "
+        "연습 문제부터 시작하고, 필요하면 글씨를 키우거나 생각할 시간을 늘려 보세요."
+    )
+    st.markdown("**이렇게 시작해요**  \n① 게임하러 가기 → ② 연습으로 익히기 → ③ 도형 문제에 도전하기")
+    st.caption("처음에는 ‘연습만 하기’를 선택해도 좋아요. 게임을 마친 뒤 기록 파일을 올리면 정답률과 응답 시간을 확인할 수 있어요.")
+
+    st.subheader("내 게임 기록 살펴보기")
 
     st.write(
         "게임을 완료한 후 다운로드한 JSON 파일을 업로드하세요."
@@ -195,6 +204,7 @@ def game_page():
 
     st.title("🎮 PLAY FOR ALL")
     st.subheader("게임 플레이")
+    st.info("처음이어도 괜찮아요! 아래에서 ‘연습만 하기’로 시작해 보세요. 글씨 크게 보기와 생각할 시간 1.5배 받기도 선택할 수 있어요.")
 
 
     game_path = os.path.join(BASE_DIR, "PLAY_FOR_ALL.html")
