@@ -280,10 +280,4 @@ def analysis_page(data):
     # 8. 업로드 페이지로 돌아가기
     # --------------------------------
 
-    st.divider()
-
-    if st.button("← 업로드 페이지로 돌아가기"):
-
-        st.session_state.page = "upload"
-
-        st.rerun()
+    
